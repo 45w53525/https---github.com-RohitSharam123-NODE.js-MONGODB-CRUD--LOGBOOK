@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee+Shade&family=Ewert&family=Pacifico&display=swap');
+#main-navigation ul {
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.nav__ul_li {
+    font-size: xx-large;
+    margin: 0.625rem;
+}
+
+.nav__ul_li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: aqua;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.list a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.625rem;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.Heading {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25rem;
+}
+
+.form3 {
+    display: flex;
+    justify-content: center;
+    margin-right: 2.1875rem;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}

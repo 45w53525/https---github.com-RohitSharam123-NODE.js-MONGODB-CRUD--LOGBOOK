@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/home.css")
+        title  #{title}
+    body 
+        header#header 
+           h1#header__h1 
+           nav.nav(id="main-navigation", aria-label="main navigation") 
+             ul.nav__ul 
+                li.nav__ul_li 
+                    a(href="/")  Home    
+               
+                li.nav__ul_li 
+                    a(href="/cats")  Cats 
+
+        main#main
+           block layout-content 
+          
+        footer#footer
+           p &copy; copyright 2022. 

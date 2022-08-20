@@ -1,0 +1,18 @@
+extends home 
+
+block layout-content 
+
+ div.content
+  h1.Heading  Add Cats 
+  form(action="/cats/add", method="post") 
+    div.form
+      label(for="name") Name:
+      input(type="text", id="name", name="name", placeholder ="abc") 
+    div.form
+      label(for="breed") Breed: 
+      input(type="text", id ="breed" , name="breed", placeholder ="xyz") 
+    div.form3
+      label(for="description") Description:
+      input(type="text", id ="description" , name="description", placeholder ="abc")
+  
+    button(type="submit", value = "add-cat")  Submit    

@@ -1,0 +1,21 @@
+extends home 
+
+block layout-content 
+ 
+ 
+ 
+ div.content
+  h1.Heading  Edit Cats 
+  form(action="/cats/edit/list", method="post")
+    input(type="hidden",name="id",value=editcats._id)
+    div.form
+      label(for="catname") Name:
+      input(type="text", id="catname", name="catname", placeholder ="abc",value=editcats.name  ) 
+    div.form
+      label(for="catbreed") Breed: 
+      input(type="text", id ="catbreed" , name="catbreed", placeholder ="xyz",value=editcats.breed) 
+    div.form3
+      label(for="description") Description:
+      input(type="text", id ="catdescription" , name="catdescription", placeholder ="abc",value=editcats.des)
+  
+    button(type="submit") Update Cat  

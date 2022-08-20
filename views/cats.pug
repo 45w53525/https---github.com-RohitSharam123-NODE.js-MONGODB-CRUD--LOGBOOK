@@ -1,0 +1,26 @@
+extends home 
+
+block layout-content 
+
+    div.list 
+      a(href="/cats/add") Add New Cats.
+    table
+      thead 
+         tr 
+           th Cats Name 
+           th Cats Breed 
+           th Cats Description
+      tbody          
+      each list in cat
+         tr 
+           td #{list.Name}
+           td #{list.Breed}
+           td #{list.Description}
+           td
+             form(action="/cats/delete", method="get") 
+              input(type="hidden", name="catid",value=list._id )
+              button.button(type="submit")  Delete
+             
+             form(action="/cats/edit", method="get") 
+              input(type="hidden", name="catid",value=list._id )  
+              button.button(type="submit" value = "edit") Edit
